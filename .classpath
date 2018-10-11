@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/apache-rat-0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/facebook4j-core-2.3.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/facebook4j-core-2.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/hadoop-common-2.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/hadoop-consumer-0.8-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/hadoop-producer-0.8-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/hbase-client-0.98.0-hadoop2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/hbase-client-0.98.8-hadoop2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/hbase-common-0.98.8-hadoop2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/hbase-protocol-0.98.8-hadoop2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/httpclient-4.3.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/jackson-annotations-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/jackson-core-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/jackson-databind-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/jackson-dataformat-xml-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Microsoft JDBC/sqljdbc_4.1/sqljdbc_4.0/enu/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/mysql-connector-java-5.1.28.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
