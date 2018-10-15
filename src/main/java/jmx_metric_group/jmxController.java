@@ -143,21 +143,6 @@ public class jmxController{
 
 	
 	public static Connection conn;
-		
-
-	public static com.rabbitmq.client.Channel uchannel;
-	public static com.rabbitmq.client.Channel nchannel;
-	public static com.rabbitmq.client.Connection connection;
-	
-		
-	public static String splnkIP;
-	public static String splnkPort;
-	
-	public static String blogID;
-	public static String newsID;
-	public static String forumSiteID;
-	public static String postID;
-	public static String flag;
 	
 	public static int postCount=0;
 	public static int msgCount=0;
@@ -166,7 +151,6 @@ public class jmxController{
 	public static File efile;
 	public static FileWriter rfop;
 	public static FileWriter efop;
-	public static HTable htable;
 	public static DriverManagerDataSource dataSource;
 	 
 	public static long lagTotal; 
@@ -193,18 +177,7 @@ public class jmxController{
 	
 	public static Logger logger = LoggerFactory.getLogger("jmxController");
 	
-    private static ConsumerConfig createConsumerConfig(String a_zookeeper, String a_groupId) {
-        Properties props = new Properties();
-        props.put("zookeeper.connect", a_zookeeper);
-        props.put("group.id", a_groupId);
-        props.put("zookeeper.session.timeout.ms", "400");
-        props.put("zookeeper.sync.time.ms", "200");
-        props.put("auto.commit.interval.ms", "1000");
-        props.put("auto.offset.reset", "smallest");
- 
-        return new ConsumerConfig(props);
-    }
-    
+       
     public static void main(String[] args) throws MessagingException, IOException, JSchException {
       	
     	String command = "";
@@ -221,7 +194,7 @@ public class jmxController{
     	
 		
 		props = new Properties();
-		props.put("bootstrap.servers", "kafka-dev01.socialgist.local:9092,kafka-dev02.socialgist.local:9092,kafka-dev03.socialgist.local:9092");
+		props.put("bootstrap.servers", kafkaBrokers);
 		props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 		props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 	   
@@ -249,7 +222,7 @@ public class jmxController{
 		    consumerProps.put("exclude.internal.topics",  false);
 		    consumerProps.put("group.id" , "test");
 		   // consumerProps.put("bootstrap.servers", "kafka-dev01.socialgist.local:9092,kafka-dev02.socialgist.local:9092,kafka-dev03.socialgist.local:9092");
-		    consumerProps.put("bootstrap.servers", "kafkaprod11.boardreader.com:9092,kafkaprod12.boardreader.com:9092,kafkaprod13.boardreader.com:9092");
+		    consumerProps.put("bootstrap.servers", kafkaBrokers);
 		    consumerProps.put("key.deserializer","org.apache.kafka.common.serialization.ByteArrayDeserializer");  
 		    consumerProps.put("value.deserializer","org.apache.kafka.common.serialization.ByteArrayDeserializer");	       
 	        		    
@@ -267,20 +240,25 @@ public class jmxController{
 			    
 			        session.setConfig(config);
 		
-			        session.setPassword(pword);
+			        session.setPassword("F3usLX!");
 			        session.connect(50000);
 	
 			        
 			        //=======================================================================================================================
 				    // code to remotely execute sh script to retrieve all topics and consumer groups
-			        command = "/usr/hdf/3.1.2.0-7/kafka/bin/kafka-consumer-groups.sh --bootstrap-server 192.168.7.124:9092 --list";
+			        if(kafkaBrokers.toLowerCase().contains("prod")){
+			        	command = "/usr/hdf/3.1.1.0-35/kafka/bin/kafka-consumer-groups.sh --bootstrap-server " + kafkaServer + ":9092 --list";
+			        } else if(kafkaBrokers.toLowerCase().contains("dev")){
+			        	command = "/usr/hdf/3.1.2.0-7/kafka/bin/kafka-consumer-groups.sh --bootstrap-server " + kafkaServer + ":9092 --list";
+			        }
+			        //command = "/usr/hdf/3.1.2.0-7/kafka/bin/kafka-consumer-groups.sh --bootstrap-server " + kafkaServer + ":9092 --list";
 			        openConnection(session, consumerList, command);
 		           
 			        // End of code section to retrieve topics and consumer groups list
 			        //=============================================================================================================================================================
 
 			        Thread.sleep(600000);
-			        
+			        session.disconnect();
 	        	}
 	        } catch (JSchException e1) {
 				// TODO Auto-generated catch block
@@ -353,7 +331,13 @@ public class jmxController{
 	       
      	    System.out.println(sb.toString());
      	   
-	        command = "/usr/hdf/3.1.2.0-7/kafka/bin/kafka-consumer-groups.sh --bootstrap-server 192.168.7.124:9092 --describe -group";
+     	   if(kafkaBrokers.toLowerCase().contains("prod")){
+	        	command = "/usr/hdf/3.1.1.0-35/kafka/bin/kafka-consumer-groups.sh --bootstrap-server "+ kafkaServer + ":9092 --describe -group";
+	        } else if(kafkaBrokers.toLowerCase().contains("dev")){
+	        	command = "/usr/hdf/3.1.2.0-7/kafka/bin/kafka-consumer-groups.sh --bootstrap-server "+ kafkaServer + ":9092 --describe -group";
+	        }
+     	    
+	        
 	        channel.disconnect();
 	        createJson(consumerList,channel,command, scriptOutput, session);
  	        session.disconnect();
@@ -500,8 +484,7 @@ public class jmxController{
 			smtpPort = fileProp.getProperty("smtpPort");
 			smtp_username = fileProp.getProperty("smtp_username");
 			smtp_password = fileProp.getProperty("smtp_password");
-			splnkIP = fileProp.getProperty("splnkIP");
-			splnkPort = fileProp.getProperty("splnkPort");
+
 			username = fileProp.getProperty("username");
 			password = fileProp.getProperty("password");
 			streamURL =fileProp.getProperty("streamUrl");
