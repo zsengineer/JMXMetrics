@@ -14,7 +14,10 @@ public class jsonMessage {
 	private String current_offset;
     private String _host;
 	private String receiveddate;
-
+	private String beanName;
+	private String attribute;
+	private String attributeValue;
+	
 	private long log_end_offset;
 	private long lag;
 	
@@ -50,6 +53,14 @@ public class jsonMessage {
 
 	public String getTopic() {
 		return topic;
+	}
+	
+	public String getAttribute() {
+		return attribute;
+	}
+	
+	public String getAttributeValue() {
+		return attributeValue;
 	}
 	
 	// Long Getters a -z
@@ -92,6 +103,18 @@ public class jsonMessage {
 
 	public void setTopic(String _topic) {
 		this.topic = _topic;
+	}
+	
+	public void setBeanName(String _beanName) {
+		this.beanName = _beanName;
+	}
+	
+	public void setAttribute(String _attribute) {
+		this.attribute = _attribute;
+	}
+	
+	public void setAttributeValue(String _attributeValue) {
+		this.attributeValue = _attributeValue;
 	}
 	
 	// Long Setters a -z

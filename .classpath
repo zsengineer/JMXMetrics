@@ -18,6 +18,7 @@
 	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
+			<attribute name="test" value="true"/>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
@@ -27,22 +28,156 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/apache-rat-0.8.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/facebook4j-core-2.3.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/facebook4j-core-2.4.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/hadoop-common-2.4.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/hadoop-consumer-0.8-SNAPSHOT.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/hadoop-producer-0.8-SNAPSHOT.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/hbase-client-0.98.0-hadoop2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/hbase-client-0.98.8-hadoop2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/hbase-common-0.98.8-hadoop2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/hbase-protocol-0.98.8-hadoop2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/httpclient-4.3.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/jackson-annotations-2.2.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/jackson-core-2.2.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/jackson-databind-2.2.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/jackson-dataformat-xml-2.2.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/Microsoft JDBC/sqljdbc_4.1/sqljdbc_4.0/enu/sqljdbc4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/workspace-sts-3.2.0.RELEASE/kafkalibraries/mysql-connector-java-5.1.28.jar"/>
+	<classpathentry kind="src" path="target/generated-sources/annotations">
+		<attributes>
+			<attribute name="ignore_optional_problems" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="m2e-apt" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/amqp-client-2.8.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/apache-rat-0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/asm-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/avro-1.7.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/cglib-nodep-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/com.ibm.jbatch-tck-spi-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/commons-beanutils-core-1.8.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/commons-cli-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/commons-collections-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/commons-compress-1.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/commons-configuration-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/commons-daemon-1.0.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/commons-digester-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/commons-el-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/commons-lang3-3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/commons-math3-3.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/commons-net-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/commons-validator-1.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/EffyisAmpqTemplate-1.0.6.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/EffyisLanguageDetector-1.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/findbugs-annotations-1.3.9-1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/gmbal-api-only-3.0.0-b023.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/grizzly-framework-2.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/grizzly-http-2.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/grizzly-http-server-2.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/grizzly-http-servlet-2.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/grizzly-rcm-2.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/guava-12.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/guice-3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/guice-servlet-3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/hadoop-annotations-2.4.0.2.1.2.0-402.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/hadoop-auth-2.4.0.2.1.2.0-402.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/hadoop-common-2.4.0.2.1.2.0-402.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/hadoop-distcp-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/hadoop-hdfs-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/hadoop-mapreduce-client-common-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/hadoop-mapreduce-client-core-2.4.0.2.1.2.0-402.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/hadoop-mapreduce-client-jobclient-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/hadoop-mapreduce-client-shuffle-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/hadoop-streaming-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/hadoop-yarn-api-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/hadoop-yarn-client-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/hadoop-yarn-common-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/hadoop-yarn-server-common-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/hadoop-yarn-server-nodemanager-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/hbase-client-0.98.0.2.1.2.0-402-hadoop2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/hbase-common-0.98.0.2.1.2.0-402-hadoop2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/hbase-protocol-0.98.0.2.1.2.0-402-hadoop2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/htrace-core-2.04.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/httpclient-4.2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/httpcore-4.2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jackson-annotations-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jackson-core-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jackson-core-asl-1.4.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jackson-databind-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jackson-jaxrs-1.8.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jackson-mapper-asl-1.4.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jackson-xc-1.8.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jasper-runtime-5.5.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/javax.batch-api-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/javax.inject-1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/javax.servlet-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/javax.servlet-api-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/java-xmlbuilder-0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jaxb-api-2.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jaxb-impl-2.2.3-1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jcl-over-slf4j-1.5.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jersey-client-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jersey-core-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jersey-grizzly2-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jersey-guice-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jersey-json-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jersey-server-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jersey-test-framework-core-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jersey-test-framework-grizzly2-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jets3t-0.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jettison-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jetty-6.1.26.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jetty-util-6.1.26.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jopt-simple-3.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jsch-0.1.42.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jsp-api-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/jsr305-1.3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/kafka_2.10-0.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/management-api-3.0.0-b012.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/metrics-annotation-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/metrics-core-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/microsoft-windowsazure-storage-sdk-0.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/mongo-java-driver-2.10.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/mysql-connector-java-5.1.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/netty-3.6.6.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/oro-2.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/paranamer-2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/protobuf-java-2.5.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/scala-library-2.10.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/servlet-api-2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/slf4j-api-1.5.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/slf4j-log4j12-1.5.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/snappy-java-1.0.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/spring-amqp-1.1.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/spring-aop-3.1.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/spring-asm-3.1.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/spring-batch-core-3.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/spring-batch-infrastructure-3.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/spring-beans-3.1.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/spring-context-3.1.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/spring-context-support-4.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/spring-core-3.1.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/spring-data-hadoop-2.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/spring-data-hadoop-batch-2.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/spring-data-hadoop-core-2.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/spring-expression-3.1.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/spring-jdbc-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/spring-rabbit-1.1.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/spring-retry-1.1.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/spring-tx-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/stax-api-1.0-2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/xml-apis-1.0.b2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/xmlenc-0.52.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/xmlpull-1.1.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/xpp3_min-1.1.4c.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/xstream-1.4.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/xz-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/zkclient-0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zfareed/Documents/FacebookCollector_v2_lib/zookeeper-3.4.5.2.1.2.0-402.jar"/>
+	<classpathentry kind="src" output="target/test-classes" path="target/generated-test-sources/test-annotations">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="ignore_optional_problems" value="true"/>
+			<attribute name="m2e-apt" value="true"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
